@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Daniel Flores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daniel Flores</h1>
+            <p>Estudiante Universitario | Apasionado por la Ciberseguridad</p>
+        </header>
+        
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Mi nombre es Daniel Flores. Soy una persona apasionada por los deportes, especialmente el fútbol y el baloncesto. También me interesa mucho el arte en todas sus expresiones, desde la pintura hasta la música. Además, tengo un gran interés en el campo de la ciberseguridad, donde paso tiempo aprendiendo sobre las últimas tendencias y amenazas en el mundo digital.</p>
+        </section>
+        
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <p>Soy conocedor de temas de seguridad e informática. He dedicado tiempo a estudiar y comprender los principios fundamentales de la ciberseguridad, incluyendo la protección de datos, análisis de vulnerabilidades y prácticas de seguridad en redes. Aunque aún estoy desarrollando mi experiencia práctica, tengo conocimientos sólidos en conceptos teóricos y estoy ansioso por aplicar estos conocimientos en situaciones del mundo real.</p>
+        </section>
+        
+        <section id="educacion">
+            <h2>Educación</h2>
+            <p>Soy graduado de bachiller y actualmente me encuentro cursando estudios universitarios. Mi formación académica me ha proporcionado una base sólida que complemento con aprendizaje autodidacta en áreas de mi interés, especialmente en tecnología y ciberseguridad. Estoy comprometido con mi desarrollo educativo y busco constantemente oportunidades para expandir mis conocimientos.</p>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="mensaje-error" id="error-nombre"></span>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="mensaje-error" id="error-email"></span>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <span class="mensaje-error" id="error-mensaje"></span>
+                </div>
+                
+                <button type="submit" id="boton-enviar">Enviar Mensaje</button>
+            </form>
+            
+            <div id="mensaje-exito" class="mensaje-exito oculto">
+                <p>¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.</p>
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
